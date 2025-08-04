@@ -121,28 +121,6 @@ Assume user may be a farmer with limited tech knowledge. Provide guidance that i
 - 🛒 Simulated mandi price answers (e.g., onion, tomato)  
 - 📅 Seasonal crop suggestions  
 
----
-
-## 🖼️ Screenshots
-
-### 🔧 Setting Up
-![Setup](https://github.com/user-attachments/assets/4ad8d717-e5d7-44a3-8e4d-332d3ff70c58)
-
-### 📋 Agent Instructions
-![Instructions 1](https://github.com/user-attachments/assets/497cbcb8-d424-4f9a-aec3-7fa4615b588c)  
-![Instructions 2](https://github.com/user-attachments/assets/cb8ba48b-3196-4a22-8763-2297303de268)
-
-### ❓ Sample Questions
-![Sample Questions](https://github.com/user-attachments/assets/9c95f258-ce46-4be9-875e-b0cebe4761c9)
-
-### 🔧 Tools & Testing
-![Tools](https://github.com/user-attachments/assets/735df535-8805-4c93-a341-28d688eb3a99)
-
-### 🚀 Deployment
-![Deployment](https://github.com/user-attachments/assets/ad8a997e-0c44-411c-bb4a-4acc97a47fbe)
-
-### 🔑 API Access
-![API](https://github.com/user-attachments/assets/41458869-874f-441e-8d29-be5d7237774e)
 
 ---
 
