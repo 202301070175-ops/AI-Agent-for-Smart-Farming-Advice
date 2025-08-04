@@ -1,35 +1,55 @@
 🌾 AI Agent for Smart Farming Advice
-An AI-powered assistant built using IBM Watsonx.ai and Granite LLM to provide smart, simulated farming guidance. Designed for small-scale farmers, the agent suggests suitable crops, offers pest control tips, irrigation guidance, and simulated mandi (market) prices—all without requiring real-time API integration.
+An AI agent that provides smart farming tips using IBM Granite — crop advice, pest control, irrigation tips, and mandi rates — all simulated intelligently without external APIs. Designed to support small-scale farmers with easy, multilingual access to agricultural knowledge.
 
 🧠 Technologies Used
 IBM Watsonx.ai Studio
 
-IBM Granite Foundation Model (granite-13b-chat or granite-3-8b-instruct)
+IBM Granite Foundation Model (LLM)
 
 IBM Cloud Object Storage
 
-☁️ IBM Cloud Services
+☁️ IBM Cloud Services Used
 Watsonx.ai (LangGraph + ReAct)
 
-IBM Cloud Lite Account (Free Tier)
+Granite Model (granite-13b-chat or granite-3-8b-instruct)
+
+IBM Cloud Lite Account
 
 IBM Cloud Object Storage
 
-⚙️ Project Workflow
-1. Build the Agent
-Log in to IBM Cloud → Watsonx.ai → Gen AI → Automating Tasks → Agent Lab
+🧱 Part 1: Building the Agent
+✅ Step 1: Access Watsonx.ai
+Log in at IBM Cloud
 
-Create a new project and add Cloud Object Storage
+Navigate: Menu → Watsonx → Watsonx.ai
 
-Select Chat and Build
+✅ Step 2: Open Agent Lab
+Go to Gen AI
 
-Associate Watsonx.ai Runtime service
+Click Automating Tasks → Agent Lab
 
-Choose model: granite-13b-chat or granite-3-8b-instruct
+✅ Step 3: Create a New Project
+Click Create New Project
 
-Add agent instructions and sample questions
+Name: Smart Farming Agent
 
-Exclude tools:
+Add Cloud Object Storage
+
+✅ Step 4: Build the Chat Agent
+Inside the project: Chat and Build → Associate Service
+
+Create & select watsonx.ai Runtime
+
+✅ Step 5: Model and Tool Selection
+Choose: granite-13b-chat or granite-3-8b-instruct
+
+Open Agent Lab → Add:
+
+Agent Instructions
+
+Sample Questions
+
+Tools (DO NOT select):
 
 ❌ WebCrawler
 
@@ -39,65 +59,73 @@ Exclude tools:
 
 ❌ Document Search
 
-2. Agent Instructions
-The agent should:
+🌾 Agent Instructions (Summary)
+You are a smart farming assistant built using IBM Granite on IBM Cloud. You help small-scale farmers by answering questions about crops, seasons, soil, weather, pest control, and market prices.
 
-Suggest seasonal crops based on region
+When greeted, say:
+"Hi, I’m your Smart Farming Assistant. Ask me anything about crops, seasons, soil, weather, or prices!"
 
-Offer pest and soil management tips
+Your responsibilities:
 
-Simulate mandi rates and weather-related advice
+Recommend crops for the season and soil
 
-Use simple, practical language suitable for farmers
+Give pest & soil management advice
 
-Avoid real-time data calls—simulate based on general agricultural knowledge
+Provide simulated mandi prices
 
-Greeting Example:
-“Hi, I’m your Smart Farming Assistant. Ask me anything about crops, soil, pests, irrigation, or prices!”
+Offer practical, localized, simple advice
 
-3. Deployment Steps
-Save the agent → Deploy
+Do not use real-time data—respond based on general farming knowledge
 
-Create and configure a new deployment space
+🧪 Part 2: Deployment and Testing
+✅ Step 1: Save Your Agent
+Click Save → Save as Agent
 
-Deploy the saved agent to the new space
+(Optional: Save as Standard Notebook)
 
-Retrieve the API endpoint and key for integration or testing
+✅ Step 2: Deploy the Agent
+Click Deploy → Create → Generate API Key → Reload
 
-✅ Agent is now live and testable via API on IBM Cloud
+✅ Step 3: Create Deployment Space
+Click New Deployment Space → Name: Smart Farming Deployment
 
-👤 Target Users
-Small and marginal farmers
+Select: watsonx.ai → Click Create
 
-Students of agriculture
+✅ Step 4: Final Deployment
+Open the space → Click Deploy
 
-Agritech training setups
+Select your agent → Confirm deployment
 
-First-time tech adopters
+✅ Step 5: Run & Access API
+Copy API endpoint + key
 
-Low-literacy and multilingual user groups
+Click Run to test your deployed agent
 
-🌟 Features
-Multilingual support (e.g., Hindi, Marathi)
+✅ Done! Your AI Farming Agent is now live on IBM Cloud 🎉
 
-Simulated mandi prices for key crops
+👨‍🌾 Target Users
+Small-scale farmers
 
-Seasonal crop recommendations
+First-time tech users (multilingual)
 
-Organic pest control suggestions
+Students in agriculture
 
-Farmer-friendly, easy-to-understand replies
+Agritech demos & training
 
-🛠️ Sample Questions
-txt
-Copy
-Edit
-- What crop is best to grow in August in Maharashtra?
-- How can I get rid of whiteflies on tomato plants?
-- What is the mandi price for onions in Pune?
-- Which fertilizer is best for increasing soil nitrogen?
-- गहू साठी योग्य खत कोणते आहे? (Marathi)
-🔗 Helpful Resources
+Low-literacy users needing simplified UI
+
+🌟 WOW Factors
+💬 Multilingual support (e.g., Hindi, Marathi)
+
+📦 Crop & soil guidance without external APIs
+
+🐛 Organic pest control tips
+
+🛒 Simulated mandi price responses
+
+📅 Seasonal suggestions by region
+
+🔗 Useful Links
 IBM Cloud Lite
 
 IBM Watsonx.ai
@@ -106,17 +134,17 @@ IBM Granite
 
 IBM SkillsBuild
 
-🚀 Future Scope
-Voice-based interaction for non-literate users
+🎯 Future Scope
+🎙️ Voice-based interaction
 
-Offline chatbot support for low-connectivity areas
+🌐 Offline support for rural regions
 
-Crop disease detection using image inputs (future multimodal support)
+📷 Image-based crop disease detection
 
-Integration with government schemes (e.g., PM-KISAN)
+📲 Integration with PM-KISAN, soil card schemes
 
-Personalized crop calendars and schedules
+📆 Personalized crop calendars
 
-Expanded vernacular language models
+🗣️ More regional language support
 
-Built with IBM Watsonx.ai + IBM Granite to empower rural farming with accessible AI.
+Built with ❤️ using IBM Watsonx.ai + IBM Granite for sustainable agriculture.
